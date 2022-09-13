@@ -1,4 +1,5 @@
 import React from 'react';
+import DropDownInput from '../dropDownInput';
 import InputEntrada from '../inputEntrada';
 
 export default function InputsMenu() {
@@ -14,7 +15,7 @@ export default function InputsMenu() {
         <InputEntrada title={"F8 - Troca"} />
         <InputEntrada title={"F10 - Mesas"} />
         <InputEntrada title={"F11 - Pesquisar Produtos"} />
-        <InputEntrada title={"F12 - Menu Fiscal"} />
+        <DropDownInput style={{ background: 'red' }} />
         <InputEntrada title={"ESC - Sair"} />
       </div>
     </div>
