@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import DropDownInput from '../dropDownInput';
 import InputEntrada from '../inputEntrada';
 
 export default function InputsMenu() {
+  let navigate = useNavigate()
   return (
     <div>
       <div className='InputsMenu'>
@@ -16,7 +18,7 @@ export default function InputsMenu() {
         <InputEntrada title={"F10 - Mesas"} />
         <InputEntrada title={"F11 - Pesquisar Produtos"} />
         <DropDownInput style={{ background: 'red' }} />
-        <InputEntrada title={"ESC - Sair"} />
+        <InputEntrada onClick={()=>{navigate("/")}} title={"ESC - Sair"} />
       </div>
     </div>
   )

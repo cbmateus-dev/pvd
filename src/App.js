@@ -1,31 +1,21 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
-import moment from 'moment';
-import './App.css';
-import BodyContent from './components/bodyContent';
-import Footer from './components/footer';
-import InputsMenu from './components/inputsMenu';
-
-
+import CaixaPage from "./Page/CaixaPage";
+import MainPage from "./Page/MainPage";
 
 function App() {
-  var dataAtual = moment().format('DD/MM/YYYY')
-  var horaAtual = moment().format('HH:mm')
+
   return (
-    <div className="App">
-      <div className='Main'>
-        <InputsMenu />
-      </div>
-      <div className='BodyContent'>
-        <BodyContent />
-      
-      </div>
-
-      <div className='Footer'>
-        <Footer dataAtual={dataAtual} horaAtual={horaAtual} />
-      </div>
-
-    </div >
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<MainPage />} />
+        <Route exact path="/caixapage" element={<CaixaPage />} />
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
