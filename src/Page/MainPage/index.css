@@ -1,0 +1,18 @@
+.content {
+    background-color: rgb(212, 207, 207);
+    width: 100vw;
+    height: 100vh;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inputsMain {
+    display: flex;
+    justify-content: center;
+
+
+
+}

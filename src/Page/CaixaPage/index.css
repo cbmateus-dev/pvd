@@ -1,0 +1,41 @@
+.App {
+    background-color: rgb(212, 207, 207);
+    width: 100vw;
+    height: 100vh;
+    padding: 3px;
+  
+  
+  }
+  
+  .Main {
+  
+    border: 1px solid black;
+    box-shadow: 0 0 1em black;
+    border-radius: 3px;
+  }
+  
+  .BodyContent {
+    text-align: center;
+   
+  }
+  
+  .InputsMenu {
+    padding: 10px;
+    border-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .Footer {
+    background-color: rgb(212, 207, 207);
+    border: 1px solid black;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+  
