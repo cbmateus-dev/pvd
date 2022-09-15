@@ -28,12 +28,12 @@ export default function DropDownInput(style) {
       
       <Collapse in={open} timeout="auto" unmountOnExit className='list'>
         <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 3, border: '1px solid #aabacf ', bgcolor: '#d4cfcf' }} disablePadding>
+          <ListItemButton sx={{ pl: 3, border: '1px solid #aabacf ', bgcolor: '#d4cfcf' }} >
             <ListItemText primary="Starred" />
 
           </ListItemButton>
           <Divider />
-          <ListItemButton sx={{ pl: 3, border: '1px solid #aabacf ',bgcolor: '#d4cfcf' }} disablePadding>
+          <ListItemButton sx={{ pl: 3, border: '1px solid #aabacf ',bgcolor: '#d4cfcf' }} >
             <ListItemText primary="Starred" />
 
           </ListItemButton>
